@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Text to Speech</title>
+</head>
+<body>
+  <h1>Simple Text to Speech</h1>
+
+  <input type="text" id="textInput" placeholder="Type something..." />
+  <button onclick="speak()">Speak</button>
+
+  <script>
+    function speak() {
+      const text = document.getElementById('textInput').value;
+      if (text) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+  </script>
+</body>
+</html>
