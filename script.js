@@ -1,11 +1,3 @@
-gsap.from('.page1 .box', {
-  rotate: 360,
-  duration: 1,
-  delay: 1 ,
-})
-gsap.from('.page2 .box', {
-  rotate: 360,
-  duration: 1,
-  delay: 1 ,
-  scrollTrigger: '.page2 .box',
+gsap.to('.page2 h1', {
+  transform: 'translateX(-60%)',
 })
