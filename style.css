@@ -22,8 +22,10 @@ body{
   align-items: center;
   flex: 0 0 100%;
   width: 100%;
-  background-color: rebeccapurple;
 }
+.page1{ background-color: rebeccapurple;}
+.page2{ background-color: rgb(129, 63, 196);}
+.page3{ background-color: rgb(140, 101, 179);}
 .box{
   width: 200px;
   height: 200px;
