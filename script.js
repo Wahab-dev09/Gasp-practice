@@ -6,6 +6,5 @@ gsap.from('.page1 .box', {
 gsap.from('.page2 .box', {
   rotate: 360,
   duration: 1,
-  delay: 0 ,
-  scrollTrigger: '.page2 .box',
+  delay: 1 ,
 })

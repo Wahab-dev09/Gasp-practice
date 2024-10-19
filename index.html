@@ -3,22 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Simple Text to Speech</title>
 </head>
 <body>
-  <h1>Simple Text to Speech</h1>
-
-  <input type="text" id="textInput" placeholder="Type something..." />
-  <button onclick="speak()">Speak</button>
-
-  <script>
-    function speak() {
-      const text = document.getElementById('textInput').value;
-      if (text) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        window.speechSynthesis.speak(utterance);
-      }
-    }
-  </script>
+<div class="page1"><div class="box"></div></div>
+<div class="page2"><div class="box"></div></div>
+<div class="page3"><div class="box"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
 </body>
 </html>

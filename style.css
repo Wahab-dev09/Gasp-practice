@@ -10,31 +10,22 @@ html{
 body{
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.frame{
-  width: 100%;
-  max-width: 500px;
-  background-color: rebeccapurple;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-start;
   align-items: center;
 }
-textarea{
-  width: 90%;
-  padding: 6px 10px;
-  background-color: white;
-  border: 1px solid transparent;
-  border-radius: 15px;
+.page1, .page2, .page3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: rebeccapurple;
 }
-h1{
-  width: 70%;
-  max-width: 240px;
-  margin: 0px auto;
-  text-align: center;
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: rosybrown;
 }
