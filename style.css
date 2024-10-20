@@ -12,6 +12,7 @@ body{
   height: 100vh;
   overflow-x: hidden;
   display: flex;
+  background-color: #000;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
