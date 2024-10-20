@@ -1,12 +1,13 @@
-gsap.to('.page2 h1', {
-  transform: 'translateX(-60%)',
-  scrollTrigger: {
-    trigger: '.page2',
-    scroller: 'body',
-    // markers: true,
-    start: 'top 0%',
-    end: 'top -100%',
-    scrub: 5,
-    pin: true,
-  }
+const initialPath = `M 0 80 Q 300 -20 600 80`;
+const finalPath = `M 0 80 Q 300 -20 600 80`;
+const string=document.querySelector('.string');
+string.addEventListener('mousemove',(dets)=>{
+  const path = `M 0 80 Q 300 ${dets.y} 600 80`;
+  console.log(path);
+  gsap.to("svg path",{
+    attr: {d:path}
+  })
+})
+string.addEventListener('mouseleave',()=>{
+  console.log("Leaved!")
 })

@@ -12,7 +12,7 @@ body{
   height: 100vh;
   overflow-x: hidden;
   display: flex;
-  background-color: #000;
+  background-color: #4d4d4d;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -37,4 +37,9 @@ body{
   width: 200px;
   height: 200px;
   background-color: rosybrown;
+}
+.string{
+  background-color: rgb(63, 196, 141);
+}
+svg{
 }
