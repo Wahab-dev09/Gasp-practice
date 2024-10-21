@@ -17,8 +17,14 @@ body{
   justify-content: flex-start;
   align-items: center;
 }
+.main{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
 .cursor{
   height: 20px;
   width: 20px;
   background-color: white;
+  border-radius: 50%;
 }
