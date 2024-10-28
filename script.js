@@ -1,32 +1,24 @@
-function BreakTheText(){
-  const h1 = document.querySelector('h1');
-const h1Text = h1.textContent;
-const splittedText = h1Text.split("");
-const halfvalue = splittedText.length/2;
-console.log(halfvalue)
-let clutter = "";
-splittedText.forEach((elem,idx)=>{
-  if(idx<halfvalue){
-    clutter += `<span class='a'>${elem}</span>`;
-  }else{
-    clutter += `<span class='b'>${elem}</span>`;
+gsap.to(".fanta", {
+  x: '-185%',                  // Move 20% to the left
+  y: '200%',                  // Move 150% down
+  rotate: -10,
+  duration: 1,
+  scrollTrigger:{
+    trigger: ".page2",
+    start: "top 100%",
+    end: "top 30%",
+    scrub: 2,
   }
-});
-h1.innerHTML = clutter;
-console.log(clutter)
-}
-BreakTheText();
-gsap.from('h1 .a', {
-  opacity:0,
-  y: 30,
-  duration: 0.4,
-  delay: 0.2,
-  stagger: 0.2,
 })
-gsap.from('h1 .b', {
-  opacity:0,
-  y: 30,
-  duration: 0.6,
-  delay: 0,
-  stagger: -0.25,
+gsap.to(".orange", {
+  x: '200%',                  // Move 20% to the left
+  y: '330%',                  // Move 150% down
+  rotate: -10,
+  duration: 1,
+  scrollTrigger:{
+    trigger: ".page2",
+    start: "top 100%",
+    end: "top 30%",
+    scrub: 2,
+  }
 })

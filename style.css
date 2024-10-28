@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: white;
+  color: #a0a0a0;
 }
 html{
   font-size: 15px;
@@ -20,14 +20,58 @@ body{
   height: 100%;
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.page1,.page2,.page3{
+  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(238, 157, 50);
+  display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-h1{
-  overflow: hidden;
-}
-h1 span{
-  display: inline-block;
-  font-size: 80px;
-}
+  position: relative;
+  }
+  .fanta{
+      position: absolute;
+      z-index: 4;
+      right: 10%;
+      transform: rotate(20deg);
+  }
+  .leaf{
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+  }
+  .leaf2{
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    transform: rotateY(180deg);
+    right: 0%;
+  }
+  .orange{
+    width: 250px;
+      position: absolute;
+      z-index: 1;
+      top: 20%;
+      left: 20%;
+  }
+  .page1 p,.page2 p{
+      font-size: 190px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      position: relative;
+      z-index: 3;
+  }
+  .page2 p{
+      font-size: 120px;
+      width: 50%;
+  }

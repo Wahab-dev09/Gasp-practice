@@ -1,0 +1,54 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+.page1,.page2,.page3{
+flex: 0 0 100%;
+width: 100%;
+box-sizing: border-box;
+background-color: rgb(27, 27, 27);
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.page1 img{
+    position: absolute;
+    right: 5%;
+    transform: rotate(20deg);
+}
+.page1 p,.page2 p{
+    font-size: 190px;
+    color: rgb(255, 145, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.page2 p{
+    font-size: 120px;
+}
+button{
+    background-color: rgb(113, 123, 255);
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(113, 123, 255);
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(154, 100, 207);
+}
